@@ -84,7 +84,7 @@ function fetchData() {
   
   async function getData() {
     let data = await fetchData();
-    console.log(data); // Data
+    console.log(data);
   }
   
   getData();
