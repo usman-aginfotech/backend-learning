@@ -6,12 +6,12 @@ const port = 3000;
 
 // Creating the server
 const server = http.createServer((req, res) => {
-  res.statusCode = 200; // HTTP status code: OK
-  res.setHeader('Content-Type', 'text/plain'); // Response type
-  res.end('Hello, World!\n'); // Response body
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end(<h1>'Server is running\n'</h1>);
 });
 
-// Make the server listen to requests
+
 server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
